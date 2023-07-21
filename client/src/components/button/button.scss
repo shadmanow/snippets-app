@@ -1,0 +1,41 @@
+@import "../../assets/styles/var";
+
+.Button {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
+  border-radius: 4px;
+
+  background-color: $bg-dark-light2;
+  color: $bg-white;
+  font-size: 16px;
+
+  img {
+    width: 22px;
+    height: 22px;
+    padding: 10px 6px;
+  }
+
+  .Loading {
+    width: 22px;
+    height: 22px;
+    padding: 10px 6px;
+  }
+
+  a, span {
+    padding: 10px 16px;
+  }
+
+  img ~ a, span {
+    padding: 10px 6px;
+  }
+
+  &:hover, &.active {
+    background-color: $bg-dark-light3;
+    cursor: pointer;
+  }
+}

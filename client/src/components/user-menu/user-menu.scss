@@ -1,0 +1,59 @@
+@import "../../assets/styles/var";
+
+.UserMenu {
+  padding: 0 15px;
+  position: relative;
+  color: white;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 5px;
+  justify-items: center;
+  align-items: center;
+
+  .Dropdown {
+    .user-avatar {
+      grid-column: 1 / 2;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      background-color: $bg-dark;
+      border-radius: 4px;
+      border: 1px solid $bg-dark-light;
+    }
+
+    .DropdownContent {
+      right: 0;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3px 10px;
+        margin: 2px 0;
+
+        &:hover {
+          background-color: #9c9c9c;
+        }
+      }
+
+      &.active {
+        width: 140px;
+        height: 170px;
+      }
+    }
+  }
+
+  .Button.sign-up-btn {
+    color: white;
+  }
+
+  .Button.login-btn {
+    background-color: $bg-danger;
+  }
+}

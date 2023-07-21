@@ -1,0 +1,47 @@
+@import "../../assets/styles/var";
+
+.login-page {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: max-content;
+
+  align-items: center;
+  justify-items: center;
+
+  .header {
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 60px;
+  }
+
+  .form {
+    grid-column: 3 / 5;
+
+    .Button {
+      background-color: $bg-danger;
+    }
+  }
+
+  .forgot-password-link {
+    margin: 15px;
+    grid-column: 3 / 5;
+  }
+
+  .sign-up-callout {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: $bg-dark;
+    border-radius: 5px;
+    grid-column: 3 / 5;
+  }
+}

@@ -1,0 +1,27 @@
+.Logo {
+  cursor: pointer;
+  color: #829197;
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  &:hover {
+    color: #c0cfd5;
+  }
+
+  span {
+    font-family: 'Monospace', monospace;
+    font-size: 22px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 17px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      font-size: 14px;
+    }
+  }
+}

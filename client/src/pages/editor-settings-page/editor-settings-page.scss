@@ -1,0 +1,33 @@
+@import "../../assets/styles/var.scss";
+@import "~codemirror/lib/codemirror.css";
+
+.section-content-editor {
+
+  .CodeMirror {
+    width: 100%;
+    height: 150px;
+  }
+
+  display: grid;
+  grid-template-columns: 60px 60px 60px auto;
+  grid-template-rows: 50px 150px;
+  grid-column-gap: 5px;
+
+  .Button {
+    align-self: center;
+  }
+
+  .CodeEditor {
+    grid-column: 1 / 5;
+    grid-row: 2 / 2;
+  }
+}
+
+.section-content.themes {
+  display: grid;
+  grid-template-columns: 30px 100px 30px 100px;
+  grid-row-gap: 15px;
+  //white-space: normal;
+  justify-items: start;
+  //align-items: start;
+}

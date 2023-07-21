@@ -1,0 +1,28 @@
+@import "../../assets/styles/var";
+
+.SplitContainer {
+  width: 100%;
+  height: 100%;
+
+  &.horizontal {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .gutter {
+    background-color: $bg-dark-light2;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  .gutter.gutter-horizontal {
+    cursor: col-resize;
+  }
+
+  .gutter.gutter-vertical {
+    cursor: row-resize;
+  }
+}
+
+
+

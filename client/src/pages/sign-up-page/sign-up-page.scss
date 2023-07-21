@@ -1,0 +1,27 @@
+@import "../../assets/styles/var";
+
+.sign-up-page {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: max-content;
+
+  align-items: center;
+  justify-items: center;
+
+  .header {
+    grid-column: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    font-size: 60px;
+  }
+
+  .form {
+    grid-column: 3 / 5;
+  }
+}

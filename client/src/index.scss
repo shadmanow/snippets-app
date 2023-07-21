@@ -1,0 +1,100 @@
+@import "assets/styles/reset";
+@import "assets/styles/var";
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('assets/styles/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Fira Code Regular';
+  src: url('assets/styles/FiraCode-Regular.ttf');
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $bg-main;
+  color: $bg-white;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  background-color: $bg-dark2;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $bg-dark-light3;
+  border-radius: 10px;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+input, textarea {
+  color: $bg-white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: $bg-dark-light;
+  resize: none;
+  width: calc(100% - 20px);
+  border-radius: 4px;
+  padding: 10px;
+
+  &::placeholder {
+    color: $bg-gray
+  }
+}
+
+select {
+  width: calc(100% - 8px);
+  border-radius: 4px;
+  padding: 8px;
+  border: 0;
+}
+
+.form {
+  width: 300px;
+  background-color: $bg-dark;
+  border-radius: 5px;
+  padding: 30px;
+  transition: .3s;
+
+  display: grid;
+  grid-gap: 15px;
+
+  .input-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .input-title {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .danger {
+      margin-top: 5px;
+      padding: 5px;
+      color: $bg-white;
+      background-color: $bg-danger2;
+    }
+  }
+
+  .Button {
+    margin-top: 10px;
+  }
+
+  &.disabled {
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}

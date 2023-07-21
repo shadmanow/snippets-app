@@ -1,0 +1,11 @@
+# project and npm
+.env
+.idea
+helpers
+node_modules
+google-key.json
+package-lock.json
+
+# client
+client/node_modules
+client/package-lock.json

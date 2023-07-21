@@ -1,0 +1,63 @@
+@import "../../assets/styles/var";
+
+.Comment {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: 20px 20px auto;
+  grid-gap: 0 10px;
+  margin-bottom: 20px;
+  padding: 10px 0 10px 10px;
+
+  background-color: rgba(58, 63, 72, 0.51);
+  border-radius: 4px;
+
+  .avatar {
+    grid-column: 1 / 1;
+    grid-row: 1 / 4;
+
+    justify-self: center;
+    width: 45px;
+    height: 45px;
+
+    cursor: pointer;
+    background-color: $bg-dark;
+    border-radius: 4px;
+    border: 1px solid $bg-dark-light;
+  }
+
+  .username {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .date {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    font-size: 14px;
+    color: $bg-gray;
+  }
+
+  .text {
+    font-size: 16px;
+    grid-column: 2 / 2;
+    grid-row: 3 / 4;
+    margin-top: 15px;
+    word-break: break-word;
+  }
+
+  .Button {
+    background-color: $bg-danger;
+    margin: 10px;
+    position: absolute;
+    transition: .3s;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

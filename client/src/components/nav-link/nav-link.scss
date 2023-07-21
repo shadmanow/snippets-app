@@ -1,0 +1,13 @@
+@import "../../assets/styles/var";
+
+.NavLink {
+  color: $bg-blue !important;
+
+  &:hover {
+    color: white !important;
+  }
+
+  &.active, &.active:hover {
+    color: $bg-white !important;
+  }
+}
